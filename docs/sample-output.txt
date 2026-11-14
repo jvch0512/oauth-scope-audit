@@ -1,0 +1,15 @@
+7 grants, 6 findings
+CRITICAL OA001 Mail Merge Pro
+         unverified publisher with admin consent to Mail.ReadWrite, Mail.Send (240 users)
+HIGH     OA002 DriveBackup Cloud
+         high-risk scope: Files.ReadWrite.All (900 users)
+HIGH     OA002 HR Directory Sync
+         high-risk scope: Directory.ReadWrite.All (1 user)
+MEDIUM   OA003 Calendar Sync Plus
+         unverified publisher holds Calendars.Read (18 users)
+MEDIUM   OA005 Mail Archiver
+         permanent refresh access combined with broad read (Mail.Read.All)
+MEDIUM   OA004 Old CRM Connector
+         not used for 348 days but the grant is still active
+INFO     OA006 all grants
+         7 grants, 2 from unverified publishers

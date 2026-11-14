@@ -1,0 +1,82 @@
+[
+ {
+  "app": "Mail Merge Pro",
+  "publisher_verified": false,
+  "admin_consent": true,
+  "users": 240,
+  "last_used": "2026-11-01",
+  "scopes": [
+   "Mail.ReadWrite",
+   "Mail.Send",
+   "offline_access"
+  ]
+ },
+ {
+  "app": "Calendar Sync Plus",
+  "publisher_verified": false,
+  "admin_consent": false,
+  "users": 18,
+  "last_used": "2026-10-20",
+  "scopes": [
+   "Calendars.Read",
+   "User.Read"
+  ]
+ },
+ {
+  "app": "DriveBackup Cloud",
+  "publisher_verified": true,
+  "admin_consent": true,
+  "users": 900,
+  "last_used": "2026-11-10",
+  "scopes": [
+   "Files.ReadWrite.All",
+   "offline_access"
+  ]
+ },
+ {
+  "app": "Old CRM Connector",
+  "publisher_verified": true,
+  "admin_consent": false,
+  "users": 4,
+  "last_used": "2025-12-01",
+  "scopes": [
+   "Contacts.Read",
+   "openid",
+   "profile"
+  ]
+ },
+ {
+  "app": "HR Directory Sync",
+  "publisher_verified": true,
+  "admin_consent": true,
+  "users": 1,
+  "last_used": "2026-11-13",
+  "scopes": [
+   "Directory.ReadWrite.All"
+  ]
+ },
+ {
+  "app": "Notes Widget",
+  "publisher_verified": true,
+  "admin_consent": false,
+  "users": 55,
+  "last_used": null,
+  "scopes": [
+   "openid",
+   "profile",
+   "email",
+   "User.Read"
+  ]
+ },
+ {
+  "app": "Mail Archiver",
+  "publisher_verified": true,
+  "admin_consent": true,
+  "users": 300,
+  "last_used": "2026-11-12",
+  "scopes": [
+   "Mail.Read.All",
+   "offline_access"
+  ]
+ }
+]
