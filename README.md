@@ -2,6 +2,8 @@
 
 Every OAuth consent is a standing credential that survives password resets. oauth-scope-audit reads an export of the apps your users and admins have authorised, and ranks them: unverified publishers holding tenant-wide write scopes, apps that can read all mail or files, grants nobody has used in months, and permanent refresh access to broad data.
 
+![Terminal demo of oauth-scope-audit on its sample data](docs/demo.svg)
+
 **Live demo:** https://jvch0512.github.io/oauth-scope-audit/ (Synthetic app grants, evaluated at 2026-11-14.)
 
 Python 3.9+, standard library only. The demo page is rendered from the tool's `--tsv` output by `scripts/site.py` (Python 3, only needed to regenerate the page).
@@ -53,3 +55,13 @@ make test    # 26 unit tests
 ```
 
 MIT.
+
+## Code scanning (SARIF)
+
+`scripts/tsv2sarif.py` converts the `--tsv` output into SARIF 2.1.0, so findings show up in GitHub code scanning:
+
+```sh
+python3 -m oauth_scope_audit examples/grants.json --today 2026-11-14 --tsv | python3 scripts/tsv2sarif.py --tool oauth-scope-audit --prefix examples > results.sarif
+```
+
+Upload `results.sarif` with `github/codeql-action/upload-sarif`. Severities map to SARIF levels (critical and high to error, medium to warning, low and info to note) and to a `security-severity` score.
